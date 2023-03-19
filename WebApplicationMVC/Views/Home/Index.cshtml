@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div>
+        <h4 style="text-align:center; padding-top:50px;">JSON data to WebPage table with getJSON method</h4>
+        <br>
+
+        <table id="member_table">
+            <thead>
+                <tr>
+                    <th style="width:100px">ID</th>
+                    <th style="width:100px">Name</th>
+                    <th style="width:100px">belong</th>
+                    <th style="width:100px">phone</th>
+                    <th style="width:100px">status</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+const { type } = require("jquery");
+
+    $(document).ready(function() {
+        $.ajax({
+            url: '/Home/SelectStudent'
+            type: 'GET',
+            dataType: 'json',
+            success: function(data){
+                $('#member_table').empty();
+                let student_data = "";
+                $.each(data,function(key,value){
+                    student_data = "<tr>";
+                    student_data = "<td>" + value._id + "</td>";
+                    student_data = "<td>" + value.name + "</td>";
+                    student_data = "<td>" + value.belong + "</td>";
+                    student_data = "<td>" + value.phone + "</td>";
+                    student_data = "<td>" + value.status + "</td>";
+                    student_data = "</tr>"
+
+                });
+                $('#member_table').append(student_data);
+            }
+        })
+    });
+</script>

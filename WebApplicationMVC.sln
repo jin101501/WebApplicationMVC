@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationMVC", "WebApplicationMVC\WebApplicationMVC.csproj", "{F890D404-FB13-4478-AE6C-85CCA33A9901}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MYDB1", "..\MYDB1\MYDB1\MYDB1.csproj", "{22A98996-89B0-423C-ACED-1BD1C651FD9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F890D404-FB13-4478-AE6C-85CCA33A9901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F890D404-FB13-4478-AE6C-85CCA33A9901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F890D404-FB13-4478-AE6C-85CCA33A9901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F890D404-FB13-4478-AE6C-85CCA33A9901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A98996-89B0-423C-ACED-1BD1C651FD9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A98996-89B0-423C-ACED-1BD1C651FD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A98996-89B0-423C-ACED-1BD1C651FD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A98996-89B0-423C-ACED-1BD1C651FD9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {952829D2-F7D7-4546-804D-50CA24F37E7A}
+	EndGlobalSection
+EndGlobal
